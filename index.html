@@ -4,7 +4,7 @@
 <head><!--<base href="/">-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$ROGER</title>
+    <title>$ROGER ON SUI</title>
     <meta name="description" content>
     <link rel="icon" href="images/Untitled-1.png" type="image/png" sizes="16x16">
     <link rel="icon" href="images/Untitled-1.png" type="image/png" sizes="32x32">
@@ -4665,17 +4665,22 @@
             }
         </style>
     </noscript>
-    <script nonce="755719d0-2a68-473d-b35d-bf4d42909ba7">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", a = "--rfso", s = "--bfso"; function u(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), u(n, 1)) return; const e = u(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? a : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = t => { const n = { type: "CLICKED_LINK", link: t.currentTarget.getAttribute("href") }; navigator.sendBeacon("_api/analytics/events", JSON.stringify(n)) }; function g() { [...document.querySelectorAll("a[href][data-interstitial-link]")].forEach((t => { t.addEventListener("click", p) })) } const v = "--sbw", w = "--inner1Vh"; function y(t, n, e) { t.style.setProperty(n, e) } function E() { y(document.documentElement, w, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; y(document.documentElement, v, t >= 0 ? `${t}px` : null) }() } var b; const O = "undefined" != typeof window ? null === (b = window.navigator) || void 0 === b ? void 0 : b.userAgent : void 0; const L = !(!O || (A = O, !A.match(/AppleWebKit\//) || A.match(/Chrome\//) || A.match(/Chromium\//))); var A; function x() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let C; function W() { C || (C = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(C).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: a } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${a}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(E, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { L && i(W, { runOnLoad: !0 }) }, function () { L && e(x) }, function () { e(h) }, function () { e(g) }].forEach((t => t())) }();</script>
+    <script
+        nonce="755719d0-2a68-473d-b35d-bf4d42909ba7">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", a = "--rfso", s = "--bfso"; function u(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), u(n, 1)) return; const e = u(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? a : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = t => { const n = { type: "CLICKED_LINK", link: t.currentTarget.getAttribute("href") }; navigator.sendBeacon("_api/analytics/events", JSON.stringify(n)) }; function g() { [...document.querySelectorAll("a[href][data-interstitial-link]")].forEach((t => { t.addEventListener("click", p) })) } const v = "--sbw", w = "--inner1Vh"; function y(t, n, e) { t.style.setProperty(n, e) } function E() { y(document.documentElement, w, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; y(document.documentElement, v, t >= 0 ? `${t}px` : null) }() } var b; const O = "undefined" != typeof window ? null === (b = window.navigator) || void 0 === b ? void 0 : b.userAgent : void 0; const L = !(!O || (A = O, !A.match(/AppleWebKit\//) || A.match(/Chrome\//) || A.match(/Chromium\//))); var A; function x() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let C; function W() { C || (C = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(C).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: a } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${a}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(E, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { L && i(W, { runOnLoad: !0 }) }, function () { L && e(x) }, function () { e(h) }, function () { e(g) }].forEach((t => t())) }();</script>
 </head>
 
 <body>
     <div id="root"><a id="welcome" aria-hidden="true" style="visibility:hidden;"></a>
-        <section id="GAP9ThPPbZaHoiJb" style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;">
-            <div id="HbOOCBWyoGfmtd9O" style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <section id="GAP9ThPPbZaHoiJb"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;">
+            <div id="HbOOCBWyoGfmtd9O"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
                 <div id="Lj0zCI0TxZw1rdDF" style="z-index:0;">
-                    <div id="d9Vi7xbuqIlkkbFd" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                    <div id="d9Vi7xbuqIlkkbFd"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
                         <div id="bNDAPSTNDhChr4Kt" style="width:100%;height:100%;opacity:1.0;">
-                            <div id="zixhCNGUa9nMiKqG" style="background-color:#0098d9;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            <div id="zixhCNGUa9nMiKqG"
+                                style="background-color:#0098d9;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
                             </div>
                         </div>
                     </div>
@@ -4685,15 +4690,23 @@
                 <div id="WCRe3jT1V6oLIYAC">
                     <div id="Mo6890qgRkgGovCL" style="display:grid;position:relative;">
                         <div id="BOVuXwJrZnUZ7e7h" style="z-index:5;pointer-events:none;">
-                            <div id="IceSbBzeiffOCSJ8" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg id="gA1ate2eOINVl4zT" viewBox="0 0 22.4305 22.3825" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="IceSbBzeiffOCSJ8"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg
+                                    id="gA1ate2eOINVl4zT" viewBox="0 0 22.4305 22.3825" preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="n3BKL4ZBXQAkjJvB" style="transform:scale(1, 1);">
                                         <g id="nNMvBJst2uruxpOr" style="clip-path:url(index.html#mZ7pTLffxGZKrpTc);">
                                             <clippath id="mZ7pTLffxGZKrpTc">
-                                                <path d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z">
+                                                <path
+                                                    d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z">
                                                 </path>
                                             </clippath>
-                                            <path id="rJvl9uiqLTa1wtCb" d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z" style="fill:#ffffff;opacity:1.0;"/>
-                                            <path id="Z4d2Nj08erCfkJcq" d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                            <path id="rJvl9uiqLTa1wtCb"
+                                                d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z"
+                                                style="fill:#ffffff;opacity:1.0;" />
+                                            <path id="Z4d2Nj08erCfkJcq"
+                                                d="M3.24520309,0 L19.18525498,0 C20.04593635,0 20.87136646,0.34190434 21.47996009,0.95049798 22.08855373,1.55909161 22.43045807,2.38452172 22.43045807,3.24520309 L22.43045807,19.13732903 C22.43045807,19.9980104 22.08855373,20.82344051 21.47996009,21.43203414 20.87136646,22.04062778 20.04593635,22.38253212 19.18525498,22.38253212 L3.24520309,22.38253212 C2.38452172,22.38253212 1.55909161,22.04062778 0.95049798,21.43203414 0.34190434,20.82344051 0,19.9980104 0,19.13732903 L0,3.24520309 C0,2.38452172 0.34190434,1.55909161 0.95049798,0.95049798 1.55909161,0.34190434 2.38452172,0 3.24520309,0 Z"
+                                                style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
                                             </path>
                                         </g>
                                     </g>
@@ -4701,11 +4714,18 @@
                         </div>
                         <div id="o77SkLRpwNcvTcNP" style="z-index:6;">
                             <div id="bFT9Ovj3VIgqODW7" style="padding-top:114.77761836%;transform:rotate(0deg);">
-                                <div id="mTVFzjCC4UsNtWIa" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><a id="wIhvg6nUKeKosKoR" target="_blank" rel="noopener" href="https://www.dextools.io/app/en/ether/pair-explorer/0xa3deb569fd48c6b8c601d3087393b7977dccc228?t=1729050108282" style="pointer-events:all;" data-interstitial-link>
+                                <div id="mTVFzjCC4UsNtWIa"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><a
+                                        id="wIhvg6nUKeKosKoR" target="_blank" rel="noopener"
+                                        href="https://www.dextools.io/app/en/ether/pair-explorer/0xa3deb569fd48c6b8c601d3087393b7977dccc228?t=1729050108282"
+                                        style="pointer-events:all;" data-interstitial-link>
                                         <div id="oYO7ortkL4oc3LUD" style="width:100%;height:100%;opacity:1.0;">
-                                            <div id="aUTKmnXIAfVuC0eL" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                                <div id="uYWaha9Lum3jj6uc" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                                    <img src="fonts/5f325bdec63a9f12842afd3a69853c0f.svg" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                            <div id="aUTKmnXIAfVuC0eL"
+                                                style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                <div id="uYWaha9Lum3jj6uc"
+                                                    style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                                    <img src="./images/BlueMove_logo.webp" loading="lazy"
+                                                        style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                                 </div>
                                             </div>
                                         </div>
@@ -4715,51 +4735,93 @@
                     </div>
                 </div>
                 <div id="Bjh3BiCEVgHWR5Oj" style="z-index:13;">
-                    <div id="RFVgqXYMlNKp2Q6B" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a id="jYyy7hT9c9tUms4X" target="_blank" rel="noopener" href="https://t.me/rogercoinerc" style="pointer-events:all;" data-interstitial-link>
-                            <div id="CZPhJ5iS1ga8zEvQ" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                <p id="cFCFICbSxu6ZQxAf" style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                    <a id="n07oLtRPCwGwVWKs" target="_blank" rel="noopener" href="https://t.me/rogercoinerc" style="color:#ffffff;pointer-events:all;" data-interstitial-link>telegram </a><br></p>
+                    <div id="RFVgqXYMlNKp2Q6B"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a
+                            id="jYyy7hT9c9tUms4X" target="_blank" rel="noopener" href="https://t.me/RogerOnSui"
+                            style="pointer-events:all;" data-interstitial-link>
+                            <div id="CZPhJ5iS1ga8zEvQ"
+                                style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                <p id="cFCFICbSxu6ZQxAf"
+                                    style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                    <a id="n07oLtRPCwGwVWKs" target="_blank" rel="noopener"
+                                        href="https://t.me/RogerOnSui" style="color:#ffffff;pointer-events:all;"
+                                        data-interstitial-link>telegram </a><br>
+                                </p>
                             </div>
                         </a></div>
                 </div>
                 <div id="ht59OOpbI0uOyZAo" style="z-index:14;">
-                    <div id="GidXhcgrsbQRLZgQ" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a id="HbmYQf44xvWWbWa6" target="_blank" rel="noopener" href="https://x.com/rogercoineth" style="pointer-events:all;" data-interstitial-link>
-                            <div id="VFCKXkcSKEpp6p43" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                <p id="Se1zjndxxJ2MYJdx" style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                    <a id="Tw7ZUXFEwGUiOP5m" target="_blank" rel="noopener" href="https://x.com/rogercoineth" style="color:#ffffff;pointer-events:all;" data-interstitial-link>TWITTER</a><br></p>
+                    <div id="GidXhcgrsbQRLZgQ"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a
+                            id="HbmYQf44xvWWbWa6" target="_blank" rel="noopener" href="https://x.com/RogerOnSui"
+                            style="pointer-events:all;" data-interstitial-link>
+                            <div id="VFCKXkcSKEpp6p43"
+                                style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                <p id="Se1zjndxxJ2MYJdx"
+                                    style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                    <a id="Tw7ZUXFEwGUiOP5m" target="_blank" rel="noopener"
+                                        href="https://x.com/RogerOnSui" style="color:#ffffff;pointer-events:all;"
+                                        data-interstitial-link>TWITTER</a><br>
+                                </p>
                             </div>
                         </a></div>
                 </div>
                 <div id="cOk1J5zBkBx2owiz" style="z-index:15;">
-                    <div id="IcI2ZgHdjqAPzRgu" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a id="STMTPqpEgFu03nR1" target="_blank" rel="noopener" href="https://dexscreener.com/ethereum/0x8b85cddacfbd66b390bf3b43ff4bd7f9afa05dd4" style="pointer-events:all;" data-interstitial-link>
-                            <div id="L6PxupHs0ywJ2Yt8" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                <p id="mlLqG6xnpAZzlc7B" style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                    <a id="pD2y8ZLeJzvzbQUw" target="_blank" rel="noopener" href="https://dexscreener.com/ethereum/0x8b85cddacfbd66b390bf3b43ff4bd7f9afa05dd4" style="color:#ffffff;pointer-events:all;" data-interstitial-link>Chart</a><br></p>
+                    <div id="IcI2ZgHdjqAPzRgu"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a
+                            id="STMTPqpEgFu03nR1" target="_blank" rel="noopener" href="https://dexscreener.com/"
+                            style="pointer-events:all;" data-interstitial-link>
+                            <div id="L6PxupHs0ywJ2Yt8"
+                                style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                <p id="mlLqG6xnpAZzlc7B"
+                                    style="color:#ffffff;font-family:YAEDY6_5_7w-0;line-height:1.3758102em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                    <a id="pD2y8ZLeJzvzbQUw" target="_blank" rel="noopener"
+                                        href="https://dexscreener.com/" style="color:#ffffff;pointer-events:all;"
+                                        data-interstitial-link>Chart</a><br>
+                                </p>
                             </div>
                         </a></div>
                 </div>
                 <div id="fm44J5ObwIAJR6I2">
                     <div id="usfr3N5A6V4AkM0W" style="display:grid;position:relative;">
                         <div id="iuiIKXyKFYDWSg4G" style="z-index:4;pointer-events:none;">
-                            <div id="oKguKvwh2jWIY0zY" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg id="qjQMpD5vLNwMO2cq" viewBox="0 0 87.2665 22.3825" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="oKguKvwh2jWIY0zY"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg
+                                    id="qjQMpD5vLNwMO2cq" viewBox="0 0 87.2665 22.3825" preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="kK7eOPI0OhSxdGPn" style="transform:scale(1, 1);">
                                         <g id="YKDxWxTSkTvAV1Mj" style="clip-path:url(index.html#ke1jlnRG27kAW0NJ);">
                                             <clippath id="ke1jlnRG27kAW0NJ">
-                                                <path d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z">
+                                                <path
+                                                    d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z">
                                                 </path>
                                             </clippath>
-                                            <path id="J0EXEETQVV7ekiJ5" d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z" style="fill:#ffffff;opacity:1.0;"/>
-                                            <path id="UgZMaW5uIleUz8k6" d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                            <path id="J0EXEETQVV7ekiJ5"
+                                                d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z"
+                                                style="fill:#ffffff;opacity:1.0;" />
+                                            <path id="UgZMaW5uIleUz8k6"
+                                                d="M3.24519661,0 L84.0213134,0 C84.88199305,0 85.70742151,0.34190366 86.31601393,0.95049608 86.92460635,1.5590885 87.26651001,2.38451696 87.26651001,3.24519661 L87.26651001,19.13733551 C87.26651001,19.99801516 86.92460635,20.82344362 86.31601393,21.43203604 85.70742151,22.04062846 84.88199305,22.38253212 84.0213134,22.38253212 L3.24519661,22.38253212 C2.38451696,22.38253212 1.5590885,22.04062846 0.95049608,21.43203604 0.34190366,20.82344362 0,19.99801516 0,19.13733551 L0,3.24519661 C0,2.38451696 0.34190366,1.5590885 0.95049608,0.95049608 1.5590885,0.34190366 2.38451696,0 3.24519661,0 Z"
+                                                style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
                                             </path>
                                         </g>
                                     </g>
                                 </svg></div>
                         </div>
                         <div id="aDZhaA9g5HpgWgzv" style="z-index:12;">
-                            <div id="fDY7NnwiraqLAY67" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a id="rviRA4QkbYfbLGhE" target="_blank" rel="noopener" href="https://app.uniswap.org/swap?outputCurrency=0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4&chain=ethereum" style="pointer-events:all;" data-interstitial-link>
-                                    <div id="ceQLECWJwOYrF74d" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                        <p id="nVQ31Nte6YdzHtoM" style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.37887223em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                            <a id="v6HfcFxlSTMcU62Q" target="_blank" rel="noopener" href="https://app.uniswap.org/swap?outputCurrency=0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4&chain=ethereum" style="color:#000000;pointer-events:all;" data-interstitial-link>BUY ROGER</a><br></p>
+                            <div id="fDY7NnwiraqLAY67"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><a
+                                    id="rviRA4QkbYfbLGhE" target="_blank" rel="noopener"
+                                    href="https://movepump.com/token/" style="pointer-events:all;"
+                                    data-interstitial-link>
+                                    <div id="ceQLECWJwOYrF74d"
+                                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                        <p id="nVQ31Nte6YdzHtoM"
+                                            style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.37887223em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                            <a id="v6HfcFxlSTMcU62Q" target="_blank" rel="noopener"
+                                                href="https://movepump.com/token/"
+                                                style="color:#000000;pointer-events:all;" data-interstitial-link>BUY
+                                                ROGER</a><br>
+                                        </p>
                                     </div>
                                 </a></div>
                         </div>
@@ -4769,9 +4831,13 @@
                     <div id="mVLxBLYjEYCWCbc1" style="padding-top:162.93279022%;transform:rotate(0deg);">
                         <div id="MtOEmaKshQQyyQRp" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                             <div id="xXJZTcJujUGcI9nt" style="width:100%;height:100%;opacity:0.26;">
-                                <div id="lrtrUM4uVF7mYojp" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="ZEZm3ndS1NuZ9h7A" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="images/57f4c10172b17f112a68f01a07e52c12.png" loading="lazy" srcset="images/2230ee2cadfbb8326b7c187364828445.png 378w, images/57f4c10172b17f112a68f01a07e52c12.png 755w" sizes="(max-width: 375px) 42.65259625vw, (min-width: 375.05px) and (max-width: 480px) 43.5230574vw, (min-width: 480.05px) and (max-width: 768px) 42.74585995vw, (min-width: 768.05px) and (max-width: 1024px) 43.71735676vw, (min-width: 1024.05px) 45.11285551vw" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                <div id="lrtrUM4uVF7mYojp"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="ZEZm3ndS1NuZ9h7A"
+                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                        <img src="images/sui logo.webp" loading="lazy"
+                                            sizes="(max-width: 375px) 42.65259625vw, (min-width: 375.05px) and (max-width: 480px) 43.5230574vw, (min-width: 480.05px) and (max-width: 768px) 42.74585995vw, (min-width: 768.05px) and (max-width: 1024px) 43.71735676vw, (min-width: 1024.05px) 45.11285551vw"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                     </div>
                                 </div>
                             </div>
@@ -4779,34 +4845,50 @@
                     </div>
                 </div>
                 <div id="ih2IAoN0G5Ytj8KV" style="z-index:9;">
-                    <div id="YbzVX51Vg3Os18GX" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="Mh5e3RukhrcZUzYZ" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="d1ThXaFXQaaZ9ndb" style="color:#e93e36;font-family:YAEDY77AUF4-0;line-height:1.39766034em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="FpMkSkqgR0x7MGcN" style="color:#e93e36;">ROGER</span><br></p>
+                    <div id="YbzVX51Vg3Os18GX"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="Mh5e3RukhrcZUzYZ"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="d1ThXaFXQaaZ9ndb"
+                                style="color:#e93e36;font-family:YAEDY77AUF4-0;line-height:1.39766034em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="FpMkSkqgR0x7MGcN" style="color:#e93e36;">ROGER</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="zOLBaJX5LKoSoC04" style="z-index:8;">
-                    <div id="rg8SZcYcQ77KuZkR" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="ERNhnSoG3QSS7SuI" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="rw67If9uB8L4246I" style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.39766034em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="HULngsGegVTt62bg" style="color:#000000;">ROGER</span><br></p>
+                    <div id="rg8SZcYcQ77KuZkR"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="ERNhnSoG3QSS7SuI"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="rw67If9uB8L4246I"
+                                style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.39766034em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="HULngsGegVTt62bg" style="color:#000000;">ROGER</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="Vnf4ovpt3Pbpsyb3" style="z-index:11;">
-                    <div id="F1faRG0jR5jk1XVx" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="nvQKcMGKyMnmlNnC" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="bekEU3c79jkKIBaF" style="color:#ffffff;font-family:YAEDY77AUF4-0;line-height:1.38520174em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="cTSRUqzsQuewbyUu" style="color:#ffffff;">FOUND IN AMERICAN DAD</span><br></p>
+                    <div id="F1faRG0jR5jk1XVx"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="nvQKcMGKyMnmlNnC"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="bekEU3c79jkKIBaF"
+                                style="color:#ffffff;font-family:YAEDY77AUF4-0;line-height:1.38520174em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="cTSRUqzsQuewbyUu" style="color:#ffffff;">FOUND IN AMERICAN DAD</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="PrGebhue5EId7uEp" style="z-index:10;">
-                    <div id="qbGqDs8RBeZ59T1V" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="pqzDvKzxEkPmd61x" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="L5QTDYWLL00NyQTG" style="color:#0098d9;font-family:YAEDY77AUF4-0;line-height:1.3852023em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="ss8hVuc60WlyyxPa" style="color:#0098d9;">BY SETH MACFARLANE </span><br></p>
+                    <div id="qbGqDs8RBeZ59T1V"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="pqzDvKzxEkPmd61x"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="L5QTDYWLL00NyQTG"
+                                style="color:#0098d9;font-family:YAEDY77AUF4-0;line-height:1.3852023em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="ss8hVuc60WlyyxPa" style="color:#0098d9;">BY SUI MACFARLANE </span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -4814,18 +4896,28 @@
                     <div id="OQu6g6oPDcU0SBYE" style="display:grid;position:relative;">
                         <div id="Yy5Bh8f1CCyi9wPT" style="z-index:2;">
                             <div id="ARJR5tAFXSpcFonb" style="padding-top:10.80079965%;transform:rotate(0deg);">
-                                <div id="d23Xdm1eJ02rkOXI" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="i6qQav4UtOa09sJy" viewBox="0 0 351.8514 38.0028" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="d23Xdm1eJ02rkOXI"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="i6qQav4UtOa09sJy" viewBox="0 0 351.8514 38.0028"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="ErLI7lKfPqbCw8RN" style="transform:scale(1, 1);">
-                                            <path id="m19Hqgr087i4ADMM" d="M3.98426134,0 L347.86711805,0 C350.06756483,0 351.85137939,1.78381456 351.85137939,3.98426134 L351.85137939,34.0185005 C351.85137939,35.07519231 351.43161021,36.08860477 350.68441626,36.83579871 349.93722232,37.58299266 348.92380986,38.00276184 347.86711805,38.00276184 L3.98426134,38.00276184 C2.92756953,38.00276184 1.91415707,37.58299265 1.16696313,36.83579871 0.41976919,36.08860477 0,35.07519231 0,34.0185005 L0,3.98426134 C0,1.78381456 1.78381456,0 3.98426134,0 Z" style="fill:#000000;opacity:1.0;"/>
+                                            <path id="m19Hqgr087i4ADMM"
+                                                d="M3.98426134,0 L347.86711805,0 C350.06756483,0 351.85137939,1.78381456 351.85137939,3.98426134 L351.85137939,34.0185005 C351.85137939,35.07519231 351.43161021,36.08860477 350.68441626,36.83579871 349.93722232,37.58299266 348.92380986,38.00276184 347.86711805,38.00276184 L3.98426134,38.00276184 C2.92756953,38.00276184 1.91415707,37.58299265 1.16696313,36.83579871 0.41976919,36.08860477 0,35.07519231 0,34.0185005 L0,3.98426134 C0,1.78381456 1.78381456,0 3.98426134,0 Z"
+                                                style="fill:#000000;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
                         </div>
                         <div id="F6Oh3Jwrgk9xQfG7" style="z-index:3;">
                             <div id="iBhiFsRrOmibnb2i" style="padding-top:8.98397408%;transform:rotate(0deg);">
-                                <div id="bP60MiWubQVWd9sp" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="ugMfJL12RP81x3Aa" viewBox="0 0 347.7354 31.2405" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="bP60MiWubQVWd9sp"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="ugMfJL12RP81x3Aa" viewBox="0 0 347.7354 31.2405"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="R88zHjdjswlpKRNc" style="transform:scale(1, 1);">
-                                            <path id="c6Jx9CZ51Meq1vQh" d="M3.9842607,0 L343.75115189,0 C344.80784353,0 345.82125583,0.41976912 346.56844966,1.16696294 347.31564348,1.91415676 347.7354126,2.92756906 347.7354126,3.9842607 L347.7354126,27.25620065 C347.7354126,28.31289229 347.31564348,29.32630459 346.56844966,30.07349841 345.82125583,30.82069223 344.80784353,31.24046135 343.75115189,31.24046135 L3.9842607,31.24046135 C2.92756907,31.24046135 1.91415677,30.82069223 1.16696294,30.07349841 0.41976912,29.32630459 0,28.31289229 0,27.25620065 L0,3.9842607 C0,2.92756907 0.41976912,1.91415677 1.16696294,1.16696294 1.91415676,0.41976912 2.92756906,0 3.9842607,0 Z" style="fill:#ffffff;opacity:1.0;"/>
+                                            <path id="c6Jx9CZ51Meq1vQh"
+                                                d="M3.9842607,0 L343.75115189,0 C344.80784353,0 345.82125583,0.41976912 346.56844966,1.16696294 347.31564348,1.91415676 347.7354126,2.92756906 347.7354126,3.9842607 L347.7354126,27.25620065 C347.7354126,28.31289229 347.31564348,29.32630459 346.56844966,30.07349841 345.82125583,30.82069223 344.80784353,31.24046135 343.75115189,31.24046135 L3.9842607,31.24046135 C2.92756907,31.24046135 1.91415677,30.82069223 1.16696294,30.07349841 0.41976912,29.32630459 0,28.31289229 0,27.25620065 L0,3.9842607 C0,2.92756907 0.41976912,1.91415677 1.16696294,1.16696294 1.91415676,0.41976912 2.92756906,0 3.9842607,0 Z"
+                                                style="fill:#ffffff;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
@@ -4836,9 +4928,12 @@
                     <div id="nEUGxrb2KARg6A6a" style="padding-top:100%;transform:rotate(0deg);">
                         <div id="J1uDdmQZYu9Nrpp4" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                             <div id="Vn3ZqDOhbqPpbYiK" style="width:100%;height:100%;opacity:1.0;">
-                                <div id="JpGQp06gaxPjFInt" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="HZd63NgHV5OtrNY3" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="images/rogerandklaus.png" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                <div id="JpGQp06gaxPjFInt"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="HZd63NgHV5OtrNY3"
+                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                        <img src="images/rogerandklaus.png" loading="lazy"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                     </div>
                                 </div>
                             </div>
@@ -4847,12 +4942,16 @@
                 </div>
             </div>
         </section><a id="page-2" aria-hidden="true" style="visibility:hidden;"></a>
-        <section id="Vhd0xGouwFcNJmho" style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
-            <div id="zRzlUs4omsImhT86" style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <section id="Vhd0xGouwFcNJmho"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+            <div id="zRzlUs4omsImhT86"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
                 <div id="BxJ2AiGO1xaYKgml" style="z-index:0;">
-                    <div id="IggIkWY0NidNoeO3" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                    <div id="IggIkWY0NidNoeO3"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
                         <div id="xEjavyHqlLa8UNZH" style="width:100%;height:100%;opacity:1.0;">
-                            <div id="Wz2FxmSKbPkV50DA" style="background-color:#97defd;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            <div id="Wz2FxmSKbPkV50DA"
+                                style="background-color:#97defd;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
                             </div>
                         </div>
                     </div>
@@ -4860,44 +4959,68 @@
             </div>
             <div id="mtQcDzym2GltuIwp" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
                 <div id="O16UHQxFoCmPbStS" style="z-index:4;">
-                    <div id="EiY4qR8DM68SL7x8" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="TrfMbJDXYD1SjD8X" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="DRgui19Jg3aMctvE" style="color:#e93e36;font-family:YAEDY77AUF4-0;line-height:1.39857335em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="nj9ZoLuRVDKB113R" style="color:#e93e36;"> ABOUT ROGER</span><br></p>
+                    <div id="EiY4qR8DM68SL7x8"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="TrfMbJDXYD1SjD8X"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="DRgui19Jg3aMctvE"
+                                style="color:#e93e36;font-family:YAEDY77AUF4-0;line-height:1.39857335em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="nj9ZoLuRVDKB113R" style="color:#e93e36;"> ABOUT ROGER</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="aXKRVLwYDEAntOuv" style="z-index:3;">
-                    <div id="lXfDR04xxL0ykZxS" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="CD7rg2zxkavhYQd1" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="cjaIaLTeXq8dBzSK" style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.39857335em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="NAWDXoVlvRyVZrFN" style="color:#000000;">ABOUT ROGER</span><br></p>
+                    <div id="lXfDR04xxL0ykZxS"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="CD7rg2zxkavhYQd1"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="cjaIaLTeXq8dBzSK"
+                                style="color:#000000;font-family:YAEDY77AUF4-0;line-height:1.39857335em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="NAWDXoVlvRyVZrFN" style="color:#000000;">ABOUT ROGER</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="B1P1asN0mmMnVlvr" style="z-index:1;">
                     <div id="vZx5f4PiurG4a7kr" style="padding-top:9.86901248%;transform:rotate(0deg);">
                         <div id="pjyN6gvcfSEcWONf" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-                            <svg id="WCIZSEufRlQ18fwn" viewBox="0 0 507.0107 50.037" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <svg id="WCIZSEufRlQ18fwn" viewBox="0 0 507.0107 50.037"
+                                style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                 <g id="FotdEzbb5kmVkD5o" style="transform:scale(1, 1);">
-                                    <path id="p7hUlgvI8b3VSWda" d="M12.94884786,0 L494.06186381,0 C497.49611178,0 500.78970191,1.3642497 503.21808194,3.79262973 505.64646197,6.22100976 507.01071167,9.51459988 507.01071167,12.94884786 L507.01071167,37.08810129 C507.01071167,40.52234927 505.64646198,43.81593939 503.21808194,46.24431943 500.78970191,48.67269946 497.49611179,50.03694916 494.06186381,50.03694916 L12.94884786,50.03694916 C9.51459988,50.03694916 6.22100976,48.67269946 3.79262973,46.24431943 1.36424969,43.81593939 0,40.52234927 0,37.08810129 L0,12.94884786 C0,9.51459989 1.3642497,6.22100976 3.79262973,3.79262973 6.22100976,1.3642497 9.51459988,0 12.94884786,0 Z" style="fill:#ffffff;opacity:1.0;"/>
+                                    <path id="p7hUlgvI8b3VSWda"
+                                        d="M12.94884786,0 L494.06186381,0 C497.49611178,0 500.78970191,1.3642497 503.21808194,3.79262973 505.64646197,6.22100976 507.01071167,9.51459988 507.01071167,12.94884786 L507.01071167,37.08810129 C507.01071167,40.52234927 505.64646198,43.81593939 503.21808194,46.24431943 500.78970191,48.67269946 497.49611179,50.03694916 494.06186381,50.03694916 L12.94884786,50.03694916 C9.51459988,50.03694916 6.22100976,48.67269946 3.79262973,46.24431943 1.36424969,43.81593939 0,40.52234927 0,37.08810129 L0,12.94884786 C0,9.51459989 1.3642497,6.22100976 3.79262973,3.79262973 6.22100976,1.3642497 9.51459988,0 12.94884786,0 Z"
+                                        style="fill:#ffffff;opacity:1.0;" />
                                 </g>
-                            </svg></div>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div id="UiOznPcRiUWDk5Ry" style="z-index:5;">
-                    <div id="Sci95ExW501if3VT" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="rgAoQsN4svTZueTz" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="F6EvxTJhVXQhfX6k" style="color:#424242;font-family:YAFdJpYtCxE-1;line-height:1.3999755em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="YE1P6Ke4zceULb7b" style="color:#424242;">0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4</span><br></p>
+                    <div id="Sci95ExW501if3VT"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="rgAoQsN4svTZueTz"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="F6EvxTJhVXQhfX6k"
+                                style="color:#424242;font-family:YAFdJpYtCxE-1;line-height:1.3999755em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="YE1P6Ke4zceULb7b" style="color:#424242;">TBA</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="esMCOKptHpLE9fZX" style="z-index:6;">
-                    <div id="RkYh5hYY2IwVCwP9" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="IWNVWXaBtkhpsm2R" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="oMTgU8eEWHesZ2QD" style="color:#424242;font-family:YAEDY6_5_7w-0;line-height:1.39581879em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="gY7DnhoJLqh4NLmL" style="color:#424242;">$ROGER, the flamboyant alien from American Dad!, was created by Seth MacFarlane, who voices him. Known for his wild schemes and disguises, $ROGER plots to take over Earth, often teaming up with Klaus, the sarcastic goldfish. Together, they embark on hilariously misguided plans to dominate the planet while navigating suburban life.</span><br></p>
+                    <div id="RkYh5hYY2IwVCwP9"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="IWNVWXaBtkhpsm2R"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="oMTgU8eEWHesZ2QD"
+                                style="color:#424242;font-family:YAEDY6_5_7w-0;line-height:1.39581879em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="gY7DnhoJLqh4NLmL" style="color:#424242;">$ROGER, the flamboyant alien from
+                                    American Dad!, was created by Seth MacFarlane, who voices him. Known for his wild
+                                    schemes and disguises, $ROGER plots to take over Earth, often teaming up with Klaus,
+                                    the sarcastic goldfish. Together, they embark on hilariously misguided plans to
+                                    dominate the planet while navigating suburban life.</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -4905,9 +5028,12 @@
                     <div id="moAGiBArHkpC5ghF" style="padding-top:195.28130672%;transform:rotate(0deg);">
                         <div id="JZdWCqXG6Md9Wbkx" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                             <div id="fVKKLHqRsSlXTyNa" style="width:100%;height:100%;opacity:1.0;">
-                                <div id="tiKGdVxStQi8LEnM" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="HlH3oPQQnUxgqFb1" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="images/fa09c5c0b4b54747086784788d86a5d6.png" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                <div id="tiKGdVxStQi8LEnM"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="HlH3oPQQnUxgqFb1"
+                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                        <img src="images/fa09c5c0b4b54747086784788d86a5d6.png" loading="lazy"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                     </div>
                                 </div>
                             </div>
@@ -4918,9 +5044,13 @@
                     <div id="hBy6eh2gfUXv3i0s" style="padding-top:87.125%;transform:rotate(0deg);">
                         <div id="lIzVjOteDU3EDnHp" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                             <div id="KSHIXxfMjY02gHbe" style="width:100%;height:100%;opacity:1.0;">
-                                <div id="o4QDpuJ9jtgfUu9m" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="pm3mejhzpnP53zLO" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="fonts/a7a2210555d2379ba1b0ac025018de87.svg" alt="Ink Stain Organic Form" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                <div id="o4QDpuJ9jtgfUu9m"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="pm3mejhzpnP53zLO"
+                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                        <img src="fonts/a7a2210555d2379ba1b0ac025018de87.svg"
+                                            alt="Ink Stain Organic Form" loading="lazy"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                     </div>
                                 </div>
                             </div>
@@ -4931,9 +5061,13 @@
                     <div id="xwz9vMDbhhnP6In2" style="padding-top:87.125%;transform:rotate(0deg);">
                         <div id="zyM66oucs6BWjYAS" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                             <div id="S9uOYfL1GgCwzqRk" style="width:100%;height:100%;opacity:1.0;">
-                                <div id="jP8dKbBZpREYaVv2" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="O9OxDzl3ITEnIXPP" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="fonts/a7a2210555d2379ba1b0ac025018de87.svg" alt="Ink Stain Organic Form" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                <div id="jP8dKbBZpREYaVv2"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="O9OxDzl3ITEnIXPP"
+                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                        <img src="fonts/a7a2210555d2379ba1b0ac025018de87.svg"
+                                            alt="Ink Stain Organic Form" loading="lazy"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                     </div>
                                 </div>
                             </div>
@@ -4942,12 +5076,16 @@
                 </div>
             </div>
         </section><a id="tokenomics" aria-hidden="true" style="visibility:hidden;"></a>
-        <section id="JFhj52buFKiz61UC" style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
-            <div id="AkuB6OAcnR21nGH8" style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <section id="JFhj52buFKiz61UC"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+            <div id="AkuB6OAcnR21nGH8"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
                 <div id="KidP4MypgxodhEFE" style="z-index:0;">
-                    <div id="sJ6g0vfgTaHko5cm" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                    <div id="sJ6g0vfgTaHko5cm"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
                         <div id="EuoIY5GBZRRoLUsG" style="width:100%;height:100%;opacity:1.0;">
-                            <div id="G4MmuuvVEdM1e2es" style="background-color:#33a8de;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            <div id="G4MmuuvVEdM1e2es"
+                                style="background-color:#33a8de;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
                             </div>
                         </div>
                     </div>
@@ -4955,31 +5093,48 @@
             </div>
             <div id="gn9zDKiHnkkm4QD1" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
                 <div id="vA2NA4jM9TPJR5ye" style="z-index:19;">
-                    <div id="bZlcJjgXkMV3J7uz" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="Y9oIXyZBE3nyb3PU" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="gp5CtD5qE0OMCqY9" style="color:#f5f5f5;font-family:YADK30HQjSs-3;line-height:1.39490989em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                <span id="zpF1EzPQAgZ17Vih" style="color:#f5f5f5;">TOKENOMICS</span><br></p>
+                    <div id="bZlcJjgXkMV3J7uz"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="Y9oIXyZBE3nyb3PU"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="gp5CtD5qE0OMCqY9"
+                                style="color:#f5f5f5;font-family:YADK30HQjSs-3;line-height:1.39490989em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="zpF1EzPQAgZ17Vih" style="color:#f5f5f5;">TOKENOMICS</span><br>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="oEK0DQ7WN4EShchC">
                     <div id="WaMPexYeJrSn2uCK" style="display:grid;position:relative;">
                         <div id="fe6Gu7zMy7vPltts" style="z-index:1;">
-                            <div id="AqYsHpb1h2xdljkW" style="padding-top:125.94848792%;transform:rotate(-12.92548302deg);">
-                                <div id="akyVQRTWMCtwOa2U" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="StcEupRhkrUHCUKm" viewBox="0 0 70.3602 88.6176" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="AqYsHpb1h2xdljkW"
+                                style="padding-top:125.94848792%;transform:rotate(-12.92548302deg);">
+                                <div id="akyVQRTWMCtwOa2U"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="StcEupRhkrUHCUKm" viewBox="0 0 70.3602 88.6176"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="BCfkBqVEHTNvgEij" style="transform:scale(1, 1);">
-                                            <path id="ZNsPlbK1brj4LWr1" d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z" style="fill:#97defd;opacity:1.0;"/>
+                                            <path id="ZNsPlbK1brj4LWr1"
+                                                d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z"
+                                                style="fill:#97defd;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
                         </div>
                         <div id="UZKISAXiIphVhlZ5" style="z-index:2;">
                             <div id="LaBvpixN0pxc5fyO" style="padding-top:100%;transform:rotate(-12.92548302deg);">
-                                <div id="O9LGyloUgbamYXvP" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="EQf6VhmFESatT8Hb" viewBox="0 0 64.0 64.0" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="O9LGyloUgbamYXvP"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="EQf6VhmFESatT8Hb" viewBox="0 0 64.0 64.0"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="Dz5hARyGPo4fWBTM" style="transform:scale(1, 1);">
                                             <foreignobject id="W3cJXwV4p0jyYbEO" style="width:64px;height:64px;">
-                                                <div id="LJdt00VJWpNF0GWk" style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
-                                                    <div id="KMbTWVccwYnsRdcF" style="transform:scale(1, 1);transform-origin:32px 32px;"><img src="images/supply.png" loading="lazy" style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;"/>
+                                                <div id="LJdt00VJWpNF0GWk"
+                                                    style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
+                                                    <div id="KMbTWVccwYnsRdcF"
+                                                        style="transform:scale(1, 1);transform-origin:32px 32px;"><img
+                                                            src="images/supply.png" loading="lazy"
+                                                            style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;" />
                                                     </div>
                                                 </div>
                                             </foreignobject>
@@ -4988,12 +5143,18 @@
                             </div>
                         </div>
                         <div id="zx9tR2f4D45bKtKB" style="z-index:15;">
-                            <div id="luPZCPCihsVtPo6r" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-12.92548302deg);">
-                                <div id="FBCK2rAyD0K8skFw" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                    <p id="bxIWYYHqEKqmySOY" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791266em;text-align:center;text-transform:uppercase;">
-                                        <span id="givkjYBNHcRyui6V" style="color:#33a8de;">SUPPLY</span></p>
-                                    <p id="VgHbON0kHwV6uQbo" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.37659956em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                        <span id="SbdR1pXMLMCXsh1F" style="color:#33a8de;">1b</span><br></p>
+                            <div id="luPZCPCihsVtPo6r"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-12.92548302deg);">
+                                <div id="FBCK2rAyD0K8skFw"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="bxIWYYHqEKqmySOY"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791266em;text-align:center;text-transform:uppercase;">
+                                        <span id="givkjYBNHcRyui6V" style="color:#33a8de;">SUPPLY</span>
+                                    </p>
+                                    <p id="VgHbON0kHwV6uQbo"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.37659956em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                        <span id="SbdR1pXMLMCXsh1F" style="color:#33a8de;">10b</span><br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -5002,21 +5163,34 @@
                 <div id="aIuKZ68DVXD9au3L">
                     <div id="FzGEBd18xtF9aOKQ" style="display:grid;position:relative;">
                         <div id="SNb2Omkdxhx9aEaL" style="z-index:4;">
-                            <div id="LjskT6b95n5hKZNo" style="padding-top:125.94848792%;transform:rotate(-17.79173484deg);">
-                                <div id="n8ouAI8Ycapgwl1d" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="rYWVRUAQWmeajFxV" viewBox="0 0 70.3602 88.6176" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="LjskT6b95n5hKZNo"
+                                style="padding-top:125.94848792%;transform:rotate(-17.79173484deg);">
+                                <div id="n8ouAI8Ycapgwl1d"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="rYWVRUAQWmeajFxV" viewBox="0 0 70.3602 88.6176"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="cfpeu190xM6jSHA6" style="transform:scale(1, 1);">
-                                            <path id="DiF2cIs1oK5jWtPk" d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z" style="fill:#97defd;opacity:1.0;"/>
+                                            <path id="DiF2cIs1oK5jWtPk"
+                                                d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z"
+                                                style="fill:#97defd;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
                         </div>
                         <div id="XvS7MU6lsmMrY3Qf" style="z-index:13;">
                             <div id="xq8IolJStJdfjG2G" style="padding-top:100%;transform:rotate(-18.48886883deg);">
-                                <div id="ZpKeEYGlnZMOBFU4" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="l7DaFo3ahzDLXAoQ" viewBox="0 0 64.0 64.0" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="ZpKeEYGlnZMOBFU4"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="l7DaFo3ahzDLXAoQ" viewBox="0 0 64.0 64.0"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="b0NvkreOIgPtSonD" style="transform:scale(1, 1);">
                                             <foreignobject id="dMPcz7dMzNxxoeWb" style="width:64px;height:64px;">
-                                                <div id="OpPEPrwUPJmYoceq" style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
-                                                    <div id="rX10hej5j9qaBR24" style="transform:scale(1, 1);transform-origin:32px 32px;"><img src="images/renounced.png" loading="lazy" style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;"/>
+                                                <div id="OpPEPrwUPJmYoceq"
+                                                    style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
+                                                    <div id="rX10hej5j9qaBR24"
+                                                        style="transform:scale(1, 1);transform-origin:32px 32px;"><img
+                                                            src="images/renounced.png" loading="lazy"
+                                                            style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;" />
                                                     </div>
                                                 </div>
                                             </foreignobject>
@@ -5025,9 +5199,12 @@
                             </div>
                         </div>
                         <div id="o8qSa7Wmek7Li0cT" style="z-index:17;">
-                            <div id="BLKdzhKdSxc7bMJS" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-17.79173484deg);">
-                                <div id="T6h35cTCQlDadXr7" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                    <p id="z0yVtjK8e7DQApBg" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                            <div id="BLKdzhKdSxc7bMJS"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-17.79173484deg);">
+                                <div id="T6h35cTCQlDadXr7"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="z0yVtjK8e7DQApBg"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
                                         <span id="wjHsqxBPRQ3Boz34" style="color:#33a8de;">Contract Renounced</span><br>
                                     </p>
                                 </div>
@@ -5038,10 +5215,16 @@
                 <div id="NBYTXADt0ISzirN6">
                     <div id="pNnQZ4MJtxQxYghg" style="display:grid;position:relative;">
                         <div id="dxreNsa72qUy7oqt" style="z-index:5;">
-                            <div id="fQXeDQqbkIArgmGJ" style="padding-top:125.94848792%;transform:rotate(-6.21759062deg);">
-                                <div id="Sk4fXcT8TtLOMM2S" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="ekaa1nv7GPCxfuIF" viewBox="0 0 70.3602 88.6176" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="fQXeDQqbkIArgmGJ"
+                                style="padding-top:125.94848792%;transform:rotate(-6.21759062deg);">
+                                <div id="Sk4fXcT8TtLOMM2S"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="ekaa1nv7GPCxfuIF" viewBox="0 0 70.3602 88.6176"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="Qc3bkV0D3dxjuH6f" style="transform:scale(1, 1);">
-                                            <path id="aHbYoO2cVBW9NptO" d="M8.8751093,0 L61.48509731,0 C66.38668482,0 70.3602066,3.97352178 70.3602066,8.8751093 L70.3602066,79.74250545 C70.3602066,84.64409297 66.38668483,88.61761475 61.48509731,88.61761475 L8.8751093,88.61761475 C3.97352178,88.61761474 0,84.64409297 0,79.74250545 L0,8.8751093 C0,3.97352178 3.97352178,0 8.8751093,0 Z" style="fill:#97defd;opacity:1.0;"/>
+                                            <path id="aHbYoO2cVBW9NptO"
+                                                d="M8.8751093,0 L61.48509731,0 C66.38668482,0 70.3602066,3.97352178 70.3602066,8.8751093 L70.3602066,79.74250545 C70.3602066,84.64409297 66.38668483,88.61761475 61.48509731,88.61761475 L8.8751093,88.61761475 C3.97352178,88.61761474 0,84.64409297 0,79.74250545 L0,8.8751093 C0,3.97352178 3.97352178,0 8.8751093,0 Z"
+                                                style="fill:#97defd;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
@@ -5049,11 +5232,17 @@
                         <div id="FySo3SvzlxgenNaf" style="display:grid;position:relative;grid-area:3 / 4 / 4 / 5;">
                             <div id="v1MAQm5Jlob4cals" style="z-index:6;">
                                 <div id="T2C1x4f1fSJ9gh1a" style="padding-top:95.25%;transform:rotate(-6.21759062deg);">
-                                    <div id="pqCd0wXncecLEszZ" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                    <div id="pqCd0wXncecLEszZ"
+                                        style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                                         <div id="iKsRGEA7MQNqxGci" style="width:100%;height:100%;opacity:1.0;">
-                                            <div id="JRnNW1524ItYQWzE" style="transform:scale(-1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                                <div id="wFDt5PbYzLQjqXYV" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                                    <img src="fonts/a1a5d99929eb4cf8acacd3b122d2100d.svg" alt="Burning Corner Fire Frame Border, Cartoon Flame" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                            <div id="JRnNW1524ItYQWzE"
+                                                style="transform:scale(-1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                <div id="wFDt5PbYzLQjqXYV"
+                                                    style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                                    <img src="fonts/a1a5d99929eb4cf8acacd3b122d2100d.svg"
+                                                        alt="Burning Corner Fire Frame Border, Cartoon Flame"
+                                                        loading="lazy"
+                                                        style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                                 </div>
                                             </div>
                                         </div>
@@ -5061,12 +5250,17 @@
                                 </div>
                             </div>
                             <div id="Ktveoq7Xr080Ml5G" style="z-index:14;">
-                                <div id="xnSMqfvho4gZUdvO" style="padding-top:195.28130672%;transform:rotate(-9.86719023deg);">
-                                    <div id="RYH1ub86YP4aBPne" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                <div id="xnSMqfvho4gZUdvO"
+                                    style="padding-top:195.28130672%;transform:rotate(-9.86719023deg);">
+                                    <div id="RYH1ub86YP4aBPne"
+                                        style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
                                         <div id="a1rbm9y3kUSvB3lN" style="width:100%;height:100%;opacity:1.0;">
-                                            <div id="YbIAb1Hr113741HX" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                                <div id="FkW4d1iJGE4jdyEU" style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                                    <img src="images/burned.png" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                            <div id="YbIAb1Hr113741HX"
+                                                style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                <div id="FkW4d1iJGE4jdyEU"
+                                                    style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
+                                                    <img src="images/burned.png" loading="lazy"
+                                                        style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                                                 </div>
                                             </div>
                                         </div>
@@ -5075,12 +5269,18 @@
                             </div>
                         </div>
                         <div id="L98loRHRGl8GS7xw" style="z-index:18;">
-                            <div id="kjEeh76nwvj1L1hY" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-6.21759062deg);">
-                                <div id="d28GqF6Ea9OOP6NG" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                    <p id="C4SPaMZDR3bH8Qbi" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.3747323em;text-align:center;text-transform:uppercase;">
-                                        <span id="qwM1KbI2Qb5z0qeM" style="color:#33a8de;">lp</span></p>
-                                    <p id="GAu8TeBSdZZjBc3p" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.3747323em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                        <span id="YeLGE9Gl25PsrMWC" style="color:#33a8de;">burnt</span><br></p>
+                            <div id="kjEeh76nwvj1L1hY"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(-6.21759062deg);">
+                                <div id="d28GqF6Ea9OOP6NG"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="C4SPaMZDR3bH8Qbi"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.3747323em;text-align:center;text-transform:uppercase;">
+                                        <span id="qwM1KbI2Qb5z0qeM" style="color:#33a8de;">lp</span>
+                                    </p>
+                                    <p id="GAu8TeBSdZZjBc3p"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.3747323em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                        <span id="YeLGE9Gl25PsrMWC" style="color:#33a8de;">burnt</span><br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -5089,21 +5289,34 @@
                 <div id="r2iQHYtxfGztNd2O">
                     <div id="JI6pGKiLtfbIO49Y" style="display:grid;position:relative;">
                         <div id="NC347azp4NgZehl7" style="z-index:3;">
-                            <div id="XIz2j3fmun953qR4" style="padding-top:125.94848792%;transform:rotate(12.71047847deg);">
-                                <div id="oKAIbdX02P7UKNn4" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="dcXWm0w8QAcUf1Fe" viewBox="0 0 70.3602 88.6176" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="XIz2j3fmun953qR4"
+                                style="padding-top:125.94848792%;transform:rotate(12.71047847deg);">
+                                <div id="oKAIbdX02P7UKNn4"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="dcXWm0w8QAcUf1Fe" viewBox="0 0 70.3602 88.6176"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="cDUyWPRVfE6lgeYx" style="transform:scale(1, 1);">
-                                            <path id="W4gJvfN4hYIHMPQX" d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z" style="fill:#97defd;opacity:1.0;"/>
+                                            <path id="W4gJvfN4hYIHMPQX"
+                                                d="M10.05030256,0 L60.30990405,0 C65.86053288,0 70.3602066,4.49967373 70.3602066,10.05030256 L70.3602066,78.56731219 C70.3602066,84.11794102 65.86053288,88.61761475 60.30990405,88.61761475 L10.05030256,88.61761475 C4.49967373,88.61761474 0,84.11794102 0,78.56731219 L0,10.05030256 C0,4.49967372 4.49967373,0 10.05030256,0 Z"
+                                                style="fill:#97defd;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
                         </div>
                         <div id="a8i1ED5wc0F7C2Ys" style="z-index:12;">
                             <div id="lAey3Kxl7hYU9lxy" style="padding-top:100%;transform:rotate(13.04145811deg);">
-                                <div id="Znwm9WmYnLj8SVwi" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="W3ZQ17wPFzLGv69s" viewBox="0 0 64.0 64.0" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="Znwm9WmYnLj8SVwi"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="W3ZQ17wPFzLGv69s" viewBox="0 0 64.0 64.0"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="LONzNktZDacDdOqf" style="transform:scale(1, 1);">
                                             <foreignobject id="ZsuxVVxovjpPk5IG" style="width:64px;height:64px;">
-                                                <div id="BKk8eZkP4oE4m2qL" style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
-                                                    <div id="yomB0Ymqu6lsq7tI" style="transform:scale(1, 1);transform-origin:32px 32px;"><img src="images/tax.png" loading="lazy" style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;"/>
+                                                <div id="BKk8eZkP4oE4m2qL"
+                                                    style="clip-path:path(&#x27;M5.36961815,0 L58.63038185,0 C60.05449313,0 61.42027651,0.565726 62.42727526,1.57272474 63.434274,2.57972348 64,3.94550687 64,5.36961815 L64,58.63038185 C64,60.05449313 63.434274,61.42027651 62.42727526,62.42727526 61.42027652,63.434274 60.05449313,64 58.63038185,64 L5.36961815,64 C3.94550687,64 2.57972349,63.434274 1.57272474,62.42727526 0.565726,61.42027652 0,60.05449313 0,58.63038185 L0,5.36961815 C0,3.94550687 0.565726,2.57972349 1.57272474,1.57272474 2.57972348,0.565726 3.94550687,0 5.36961815,0 Z&#x27;);">
+                                                    <div id="yomB0Ymqu6lsq7tI"
+                                                        style="transform:scale(1, 1);transform-origin:32px 32px;"><img
+                                                            src="images/tax.png" loading="lazy"
+                                                            style="transform:translate(0px, 0px) rotate(0deg);transform-origin:32px 32px;width:64px;height:64px;display:block;opacity:1.0;object-fit:fill;" />
                                                     </div>
                                                 </div>
                                             </foreignobject>
@@ -5112,12 +5325,18 @@
                             </div>
                         </div>
                         <div id="QynWBPKlk1D1OZdU" style="z-index:16;">
-                            <div id="e9fMKjrvGK49zHQk" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(12.71047847deg);">
-                                <div id="Wpe8iAPMiswlBezs" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                    <p id="r4Ett55FtH5kZq0c" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;">
-                                        <span id="CmZqwLWWGPHU6ewh" style="color:#33a8de;">tax</span></p>
-                                    <p id="VLLDpM3i04no70kV" style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                        <span id="PuyA13GhUz4PqraU" style="color:#33a8de;">0/0</span><br></p>
+                            <div id="e9fMKjrvGK49zHQk"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(12.71047847deg);">
+                                <div id="Wpe8iAPMiswlBezs"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="r4Ett55FtH5kZq0c"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;">
+                                        <span id="CmZqwLWWGPHU6ewh" style="color:#33a8de;">tax</span>
+                                    </p>
+                                    <p id="VLLDpM3i04no70kV"
+                                        style="color:#33a8de;font-family:YADK30HQjSs-3;line-height:1.39791305em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                        <span id="PuyA13GhUz4PqraU" style="color:#33a8de;">0/0</span><br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -5126,79 +5345,139 @@
                 <div id="qmY2ce8OREhxBiGG">
                     <div id="C2kBeHKFJiuLsA2y" style="display:grid;position:relative;">
                         <div id="K33p2ORLOyzBVcYh" style="z-index:7;pointer-events:none;">
-                            <div id="gCBk2mz8T9wESiwK" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg id="FyC0pcpEqVmocx9s" viewBox="0 0 214.6573 18.6654" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                            <div id="gCBk2mz8T9wESiwK"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg
+                                    id="FyC0pcpEqVmocx9s" viewBox="0 0 214.6573 18.6654" preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="kyUXZx1pai79ZPYl" style="transform:scale(1, 1);">
-                                        <path id="m0szZWBab1N0ytUf" d="M3.33333351,0 L211.32395409,0 C213.16490335,0 214.6572876,1.49238425 214.6572876,3.33333351 L214.6572876,15.33211564 C214.65728759,17.1730649 213.16490335,18.66544914 211.32395409,18.66544914 L3.33333351,18.66544914 C1.49238425,18.66544914 0,17.1730649 0,15.33211564 L0,3.33333351 C0,1.49238424 1.49238425,0 3.33333351,0 Z" style="fill:#c4c4c4;opacity:1.0;"/>
+                                        <path id="m0szZWBab1N0ytUf"
+                                            d="M3.33333351,0 L211.32395409,0 C213.16490335,0 214.6572876,1.49238425 214.6572876,3.33333351 L214.6572876,15.33211564 C214.65728759,17.1730649 213.16490335,18.66544914 211.32395409,18.66544914 L3.33333351,18.66544914 C1.49238425,18.66544914 0,17.1730649 0,15.33211564 L0,3.33333351 C0,1.49238424 1.49238425,0 3.33333351,0 Z"
+                                            style="fill:#c4c4c4;opacity:1.0;" />
                                     </g>
-                                </svg><svg id="MpiAI1veuAnwaQfQ" viewBox="0 0 195.5556 49.8008" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                </svg><svg id="MpiAI1veuAnwaQfQ" viewBox="0 0 195.5556 49.8008"
+                                    preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="BeF2aBy2tuIammgB" style="transform:scale(1, 1);">
-                                        <path id="ujyjNQPClYwv2LIs" d="M3.0367103,0 L192.51884695,0 C194.19597574,0 195.55555725,1.35958151 195.55555725,3.0367103 L195.55555725,46.76407858 C195.55555725,47.56946423 195.23561905,48.34186337 194.6661254,48.91135703 194.09663174,49.48085068 193.3242326,49.80078888 192.51884695,49.80078888 L3.0367103,49.80078888 C2.23132465,49.80078888 1.45892551,49.48085068 0.88943185,48.91135703 0.3199382,48.34186337 0,47.56946423 0,46.76407858 L0,3.0367103 C0,2.23132465 0.3199382,1.45892551 0.88943185,0.88943185 1.45892551,0.3199382 2.23132465,0 3.0367103,0 Z" style="fill:#c4c4c4;opacity:1.0;"/>
+                                        <path id="ujyjNQPClYwv2LIs"
+                                            d="M3.0367103,0 L192.51884695,0 C194.19597574,0 195.55555725,1.35958151 195.55555725,3.0367103 L195.55555725,46.76407858 C195.55555725,47.56946423 195.23561905,48.34186337 194.6661254,48.91135703 194.09663174,49.48085068 193.3242326,49.80078888 192.51884695,49.80078888 L3.0367103,49.80078888 C2.23132465,49.80078888 1.45892551,49.48085068 0.88943185,48.91135703 0.3199382,48.34186337 0,47.56946423 0,46.76407858 L0,3.0367103 C0,2.23132465 0.3199382,1.45892551 0.88943185,0.88943185 1.45892551,0.3199382 2.23132465,0 3.0367103,0 Z"
+                                            style="fill:#c4c4c4;opacity:1.0;" />
                                     </g>
-                                </svg><svg id="dELTeajkGS9JqoiL" viewBox="0 0 124.4444 39.8695" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                </svg><svg id="dELTeajkGS9JqoiL" viewBox="0 0 124.4444 39.8695"
+                                    preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="MM7bWQHikIEdWOC8" style="transform:scale(1, 1);">
-                                        <path id="ysIyImq3qgOnhcfR" d="M1.93245088,0 L122.51199187,0 C123.02450971,0 123.51603615,0.20359692 123.87844099,0.56600176 124.24084583,0.9284066 124.44444275,1.41993304 124.44444275,1.93245088 L124.44444275,37.93701018 C124.44444275,39.00427333 123.57925502,39.86946106 122.51199187,39.86946106 L1.93245088,39.86946106 C0.86518773,39.86946106 0,39.00427333 0,37.93701018 L0,1.93245088 C0,1.41993304 0.20359692,0.9284066 0.56600176,0.56600176 0.9284066,0.20359692 1.41993304,0 1.93245088,0 Z" style="fill:#c4c4c4;opacity:1.0;"/>
+                                        <path id="ysIyImq3qgOnhcfR"
+                                            d="M1.93245088,0 L122.51199187,0 C123.02450971,0 123.51603615,0.20359692 123.87844099,0.56600176 124.24084583,0.9284066 124.44444275,1.41993304 124.44444275,1.93245088 L124.44444275,37.93701018 C124.44444275,39.00427333 123.57925502,39.86946106 122.51199187,39.86946106 L1.93245088,39.86946106 C0.86518773,39.86946106 0,39.00427333 0,37.93701018 L0,1.93245088 C0,1.41993304 0.20359692,0.9284066 0.56600176,0.56600176 0.9284066,0.20359692 1.41993304,0 1.93245088,0 Z"
+                                            style="fill:#c4c4c4;opacity:1.0;" />
                                     </g>
-                                </svg><svg id="SAtZRV8w4NIkic7w" viewBox="0 0 95.2778 38.3392" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                </svg><svg id="SAtZRV8w4NIkic7w" viewBox="0 0 95.2778 38.3392"
+                                    preserveAspectRatio="none"
+                                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                     <g id="zzNIOgl6f2Zcg9pJ" style="transform:scale(1, 1);">
-                                        <path id="jDdyBpJIubJMIk4X" d="M1.47953358,0 L93.79824505,0 C94.19064175,0 94.56696691,0.15587898 94.84443328,0.43334535 95.12189965,0.71081172 95.27777863,1.08713688 95.27777863,1.47953358 L95.27777863,36.85961971 C95.27777862,37.67674354 94.61536888,38.33915329 93.79824505,38.33915329 L1.47953358,38.33915329 C0.66240975,38.33915329 0,37.67674354 0,36.85961971 L0,1.47953358 C0,0.66240975 0.66240975,0 1.47953358,0 Z" style="fill:#c4c4c4;opacity:1.0;"/>
+                                        <path id="jDdyBpJIubJMIk4X"
+                                            d="M1.47953358,0 L93.79824505,0 C94.19064175,0 94.56696691,0.15587898 94.84443328,0.43334535 95.12189965,0.71081172 95.27777863,1.08713688 95.27777863,1.47953358 L95.27777863,36.85961971 C95.27777862,37.67674354 94.61536888,38.33915329 93.79824505,38.33915329 L1.47953358,38.33915329 C0.66240975,38.33915329 0,37.67674354 0,36.85961971 L0,1.47953358 C0,0.66240975 0.66240975,0 1.47953358,0 Z"
+                                            style="fill:#c4c4c4;opacity:1.0;" />
                                     </g>
                                 </svg></div>
                         </div>
                         <div id="aCl0750xZG85jTaj" style="display:grid;position:relative;">
                             <div id="Itr6TJ1VZ74bKrWz" style="z-index:8;pointer-events:none;">
-                                <div id="aeWi9ytMo8q8H1xk" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg id="uJWXEiM0fKwd0Oyq" viewBox="0 0 214.6573 16.0028" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                <div id="aeWi9ytMo8q8H1xk"
+                                    style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);"><svg
+                                        id="uJWXEiM0fKwd0Oyq" viewBox="0 0 214.6573 16.0028" preserveAspectRatio="none"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="fS7bLjKqe53m5u5y" style="transform:scale(1, 1);">
-                                            <path id="AtuswlOB7rkklNbg" d="M3.33333351,0 L211.32395409,0 C213.16490335,0 214.6572876,1.49238425 214.6572876,3.33333351 L214.6572876,12.66941689 C214.6572876,14.51036615 213.16490335,16.0027504 211.32395409,16.0027504 L3.33333351,16.0027504 C1.49238425,16.0027504 0,14.51036615 0,12.66941689 L0,3.33333351 C0,1.49238424 1.49238425,0 3.33333351,0 Z" style="fill:#f5f5f5;opacity:1.0;"/>
+                                            <path id="AtuswlOB7rkklNbg"
+                                                d="M3.33333351,0 L211.32395409,0 C213.16490335,0 214.6572876,1.49238425 214.6572876,3.33333351 L214.6572876,12.66941689 C214.6572876,14.51036615 213.16490335,16.0027504 211.32395409,16.0027504 L3.33333351,16.0027504 C1.49238425,16.0027504 0,14.51036615 0,12.66941689 L0,3.33333351 C0,1.49238424 1.49238425,0 3.33333351,0 Z"
+                                                style="fill:#f5f5f5;opacity:1.0;" />
                                         </g>
-                                    </svg><svg id="fneuNIn2Vhku5aBt" viewBox="0 0 177.7778 40.9119" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                    </svg><svg id="fneuNIn2Vhku5aBt" viewBox="0 0 177.7778 40.9119"
+                                        preserveAspectRatio="none"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="iqVGsVR7l9a9DBCr" style="transform:scale(1, 1);">
-                                            <path id="JWCFSrBHNzrYu1Db" d="M2.76064545,0 L175.01712555,0 C176.54178793,0 177.777771,1.23598307 177.777771,2.76064545 L177.777771,38.15125412 C177.777771,39.6759165 176.54178793,40.91189957 175.01712555,40.91189957 L2.76064545,40.91189957 C1.23598307,40.91189956 0,39.6759165 0,38.15125412 L0,2.76064545 C0,1.23598307 1.23598307,0 2.76064545,0 Z" style="fill:#f5f5f5;opacity:1.0;"/>
+                                            <path id="JWCFSrBHNzrYu1Db"
+                                                d="M2.76064545,0 L175.01712555,0 C176.54178793,0 177.777771,1.23598307 177.777771,2.76064545 L177.777771,38.15125412 C177.777771,39.6759165 176.54178793,40.91189957 175.01712555,40.91189957 L2.76064545,40.91189957 C1.23598307,40.91189956 0,39.6759165 0,38.15125412 L0,2.76064545 C0,1.23598307 1.23598307,0 2.76064545,0 Z"
+                                                style="fill:#f5f5f5;opacity:1.0;" />
                                         </g>
-                                    </svg><svg id="RoTYyGZ71rIZLEah" viewBox="0 0 111.1111 33.2028" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                    </svg><svg id="RoTYyGZ71rIZLEah" viewBox="0 0 111.1111 33.2028"
+                                        preserveAspectRatio="none"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="PoVgeUkaOSGWpLdB" style="transform:scale(1, 1);">
-                                            <path id="ZR5DzHStZvkV5rwr" d="M1.72540302,0 L109.38571149,0 C110.33862526,0 111.1111145,0.77248925 111.1111145,1.72540302 L111.1111145,31.47739011 C111.1111145,32.43030388 110.33862526,33.20279312 109.38571149,33.20279312 L1.72540302,33.20279312 C0.77248925,33.20279312 0,32.43030388 0,31.47739011 L0,1.72540302 C0,0.77248924 0.77248925,0 1.72540302,0 Z" style="fill:#f5f5f5;opacity:1.0;"/>
+                                            <path id="ZR5DzHStZvkV5rwr"
+                                                d="M1.72540302,0 L109.38571149,0 C110.33862526,0 111.1111145,0.77248925 111.1111145,1.72540302 L111.1111145,31.47739011 C111.1111145,32.43030388 110.33862526,33.20279312 109.38571149,33.20279312 L1.72540302,33.20279312 C0.77248925,33.20279312 0,32.43030388 0,31.47739011 L0,1.72540302 C0,0.77248924 0.77248925,0 1.72540302,0 Z"
+                                                style="fill:#f5f5f5;opacity:1.0;" />
                                         </g>
-                                    </svg><svg id="vS1gYTpJZf9Qq4mz" viewBox="0 0 81.9444 31.6725" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                    </svg><svg id="vS1gYTpJZf9Qq4mz" viewBox="0 0 81.9444 31.6725"
+                                        preserveAspectRatio="none"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                         <g id="QjQmin3Exgr6fjfT" style="transform:scale(1, 1);">
-                                            <path id="o8ZzbozvnMDYEonz" d="M1.27248416,0 L80.67195859,0 C81.00944237,0 81.3331037,0.13406491 81.57174077,0.37270198 81.81037784,0.61133905 81.94444275,0.93500038 81.94444275,1.27248416 L81.94444275,30.40000119 C81.94444275,31.10277479 81.37473219,31.67248535 80.67195859,31.67248535 L1.27248416,31.67248535 C0.93500038,31.67248535 0.61133905,31.53842044 0.37270198,31.29978337 0.13406491,31.0611463 0,30.73748497 0,30.40000119 L0,1.27248416 C0,0.93500038 0.13406491,0.61133905 0.37270198,0.37270198 0.61133905,0.13406491 0.93500038,0 1.27248416,0 Z" style="fill:#f5f5f5;opacity:1.0;"/>
+                                            <path id="o8ZzbozvnMDYEonz"
+                                                d="M1.27248416,0 L80.67195859,0 C81.00944237,0 81.3331037,0.13406491 81.57174077,0.37270198 81.81037784,0.61133905 81.94444275,0.93500038 81.94444275,1.27248416 L81.94444275,30.40000119 C81.94444275,31.10277479 81.37473219,31.67248535 80.67195859,31.67248535 L1.27248416,31.67248535 C0.93500038,31.67248535 0.61133905,31.53842044 0.37270198,31.29978337 0.13406491,31.0611463 0,30.73748497 0,30.40000119 L0,1.27248416 C0,0.93500038 0.13406491,0.61133905 0.37270198,0.37270198 0.61133905,0.13406491 0.93500038,0 1.27248416,0 Z"
+                                                style="fill:#f5f5f5;opacity:1.0;" />
                                         </g>
                                     </svg></div>
                             </div>
                             <div id="rN9lMoFytq5uLswN" style="z-index:9;">
-                                <div id="wTYVTHrYHlGAe6iN" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                                    <div id="kY3f3iAOo1VbWnUW" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                        <p id="MnzWHoA6lo10FIAu" style="color:#424242;font-family:YAF3uXLdllI-0;line-height:0.94458319em;text-align:center;letter-spacing:0em;">
-                                            <span id="yhlukFWlzE4cL08Z" style="color:#424242;">0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4</span><br>
+                                <div id="wTYVTHrYHlGAe6iN"
+                                    style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                                    <div id="kY3f3iAOo1VbWnUW"
+                                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                        <p id="MnzWHoA6lo10FIAu"
+                                            style="color:#424242;font-family:YAF3uXLdllI-0;line-height:0.94458319em;text-align:center;letter-spacing:0em;">
+                                            <span id="yhlukFWlzE4cL08Z" style="color:#424242;">TBA</span><br>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div id="jb20pBkHVO9LTIRO" style="display:grid;position:relative;">
                                 <div id="fJ9LzpSoaKXgEEEi" style="z-index:10;pointer-events:none;">
-                                    <div id="P2Irk5UJWscTpH5X" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                                        <svg id="GD8wPYg5XIoMIID2" viewBox="0 0 155.3714 44.7547" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                    <div id="P2Irk5UJWscTpH5X"
+                                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                                        <svg id="GD8wPYg5XIoMIID2" viewBox="0 0 155.3714 44.7547"
+                                            preserveAspectRatio="none"
+                                            style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                             <g id="okP0dH5QzCVUyULO" style="transform:scale(1, 1);">
-                                                <path id="BWaW9j74Z4iag8Cr" d="M7.38024532,0 L147.9911536,0 C149.94851636,0 151.82571064,0.77755933 153.20977512,2.16162381 154.5938396,3.54568828 155.37139893,5.42288256 155.37139893,7.38024532 L155.37139893,37.37440479 C155.37139893,39.33176755 154.5938396,41.20896183 153.20977512,42.59302631 151.82571064,43.97709079 149.94851636,44.75465012 147.9911536,44.75465012 L7.38024532,44.75465012 C5.42288256,44.75465012 3.54568829,43.97709079 2.16162381,42.59302631 0.77755933,41.20896183 0,39.33176755 0,37.37440479 L0,7.38024532 C0,5.42288256 0.77755933,3.54568829 2.16162381,2.16162381 3.54568829,0.77755933 5.42288256,0 7.38024532,0 Z" style="fill:#000000;opacity:1.0;"/>
+                                                <path id="BWaW9j74Z4iag8Cr"
+                                                    d="M7.38024532,0 L147.9911536,0 C149.94851636,0 151.82571064,0.77755933 153.20977512,2.16162381 154.5938396,3.54568828 155.37139893,5.42288256 155.37139893,7.38024532 L155.37139893,37.37440479 C155.37139893,39.33176755 154.5938396,41.20896183 153.20977512,42.59302631 151.82571064,43.97709079 149.94851636,44.75465012 147.9911536,44.75465012 L7.38024532,44.75465012 C5.42288256,44.75465012 3.54568829,43.97709079 2.16162381,42.59302631 0.77755933,41.20896183 0,39.33176755 0,37.37440479 L0,7.38024532 C0,5.42288256 0.77755933,3.54568829 2.16162381,2.16162381 3.54568829,0.77755933 5.42288256,0 7.38024532,0 Z"
+                                                    style="fill:#000000;opacity:1.0;" />
                                             </g>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div id="VhycCOV6C0zIYvoy" style="display:grid;position:relative;grid-area:3 / 3 / 4 / 4;">
+                                <div id="VhycCOV6C0zIYvoy"
+                                    style="display:grid;position:relative;grid-area:3 / 3 / 4 / 4;">
                                     <div id="Lmte4sjfn9WTPCsF" style="z-index:11;pointer-events:none;">
-                                        <div id="G49pABYn9D6L4lEO" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                                            <svg id="IoQ7xk3TU8kt3lSc" viewBox="0 0 153.5539 36.7909" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
+                                        <div id="G49pABYn9D6L4lEO"
+                                            style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                                            <svg id="IoQ7xk3TU8kt3lSc" viewBox="0 0 153.5539 36.7909"
+                                                preserveAspectRatio="none"
+                                                style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url(&#x27;data:image/png;base64,&#x27;);">
                                                 <g id="w9PLiCDc40rDa7dV" style="transform:scale(1, 1);">
-                                                    <path id="yXZlHIgoyZeg2cWB" d="M7.38024671,0 L146.17361682,0 C148.13097995,0 150.00817457,0.77755947 151.39223932,2.16162421 152.77630406,3.54568895 153.55386353,5.42288358 153.55386353,7.38024671 L153.55386353,29.41065448 C153.55386352,33.48665218 150.24961452,36.79090118 146.17361682,36.79090118 L7.38024671,36.79090118 C3.304249,36.79090118 0,33.48665218 0,29.41065448 L0,7.38024671 C0,3.304249 3.304249,0 7.38024671,0 Z" style="fill:#33a8de;opacity:1.0;"/>
+                                                    <path id="yXZlHIgoyZeg2cWB"
+                                                        d="M7.38024671,0 L146.17361682,0 C148.13097995,0 150.00817457,0.77755947 151.39223932,2.16162421 152.77630406,3.54568895 153.55386353,5.42288358 153.55386353,7.38024671 L153.55386353,29.41065448 C153.55386352,33.48665218 150.24961452,36.79090118 146.17361682,36.79090118 L7.38024671,36.79090118 C3.304249,36.79090118 0,33.48665218 0,29.41065448 L0,7.38024671 C0,3.304249 3.304249,0 7.38024671,0 Z"
+                                                        style="fill:#33a8de;opacity:1.0;" />
                                                 </g>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <div id="tAUKvRdz42SxlssK" style="z-index:20;">
-                                        <div id="zuI6K3BUJzUrJr3Y" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                                            <a id="b8Rh3JBN3lYceM0H" target="_blank" rel="noopener" href="https://app.uniswap.org/swap?outputCurrency=0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4&chain=ethereum" style="pointer-events:all;" data-interstitial-link>
-                                                <div id="zcDIWsqlwErEZo2J" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                                    <p id="V2CmGHWCfN24TDtq" style="color:#f5f5f5;font-family:YAEDY77AUF4-0;line-height:1.38696255em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
-                                                        <a id="dy1BTpxhKsHVNTSF" target="_blank" rel="noopener" href="https://app.uniswap.org/swap?outputCurrency=0x8b85CDDacfbd66b390BF3B43FF4Bd7F9AFA05DD4&chain=ethereum" style="color:#f5f5f5;pointer-events:all;" data-interstitial-link>BUY NOW</a><br></p>
+                                        <div id="zuI6K3BUJzUrJr3Y"
+                                            style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                                            <a id="b8Rh3JBN3lYceM0H" target="_blank" rel="noopener"
+                                                href="https://movepump.com/token/" style="pointer-events:all;"
+                                                data-interstitial-link>
+                                                <div id="zcDIWsqlwErEZo2J"
+                                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                                    <p id="V2CmGHWCfN24TDtq"
+                                                        style="color:#f5f5f5;font-family:YAEDY77AUF4-0;line-height:1.38696255em;text-align:center;text-transform:uppercase;letter-spacing:0em;">
+                                                        <a id="dy1BTpxhKsHVNTSF" target="_blank" rel="noopener"
+                                                            href="https://movepump.com/token/"
+                                                            style="color:#f5f5f5;pointer-events:all;"
+                                                            data-interstitial-link>BUY NOW</a><br>
+                                                    </p>
                                                 </div>
-                                            </a></div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -5207,7 +5486,8 @@
                 </div>
             </div>
         </section>
-        <script src="js/939898b427480d700449229ff00dbb8a6f9f77442b532f697866e6914ab8843a.js" async nonce="755719d0-2a68-473d-b35d-bf4d42909ba7"></script>
+        <script src="js/939898b427480d700449229ff00dbb8a6f9f77442b532f697866e6914ab8843a.js" async
+            nonce="755719d0-2a68-473d-b35d-bf4d42909ba7"></script>
     </div>
 </body>
 
